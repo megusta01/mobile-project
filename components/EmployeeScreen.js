@@ -18,7 +18,7 @@ const EmployeeForm = ({ onSubmit }) => {
       setPosition('');
     } else {
       setModalMessage('Preencha todos os campos');
-      setModalVisible(true); // Exibe a modal de erro
+      setModalVisible(true);
     }
   };
 
@@ -50,7 +50,6 @@ const EmployeeForm = ({ onSubmit }) => {
         <Text style={styles.submitButtonText}>Cadastrar</Text>
       </TouchableOpacity>
 
-      {/* Modal customizada */}
       <Modal
         visible={modalVisible}
         animationType="fade"
@@ -98,13 +97,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#f7f7f7',
   },
 
-  // Estilos para o botão de "Cadastrar"
   submitButton: {
-    backgroundColor: '#007BFF', // Cor de fundo azul
+    backgroundColor: '#007BFF',
     paddingVertical: 12,
     paddingHorizontal: 20,
     borderRadius: 8,
-    alignItems: 'center', // Para garantir que o texto esteja centralizado
+    alignItems: 'center',
     justifyContent: 'center',
     marginTop: 12,
     shadowColor: '#007BFF',
@@ -116,10 +114,9 @@ const styles = StyleSheet.create({
   submitButtonText: {
     color: '#fff',
     fontSize: 18,
-    fontWeight: '500', // Deixa o texto um pouco mais espesso
+    fontWeight: '500',
   },
 
-  // Estilos para a Modal
   modalOverlay: {
     flex: 1,
     justifyContent: 'center',
