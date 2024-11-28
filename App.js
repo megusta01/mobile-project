@@ -11,6 +11,7 @@ const EmployeeScreen = () => {
 
   return (
     <View style={styles.screen}>
+      <Image style={styles.logo} source={require('./assets/logo_app02.webp')} />
       <Text style={styles.header}>Registro de Funcionários</Text>
       <Image style={styles.image} source={require('./assets/download.png')} />
       <EmployeeForm onSubmit={handleFormSubmit} />
@@ -32,6 +33,16 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f4f4f4',
     padding: 20,
+  },
+  logo: {
+    width: 100,
+    height: 100,
+    marginTop: 25,
+    marginBottom: 20,
+    alignSelf: 'center',
+    borderRadius: 50,
+    borderWidth: 1,
+    borderColor: '#ddd',
   },
   header: {
     fontSize: 28,
